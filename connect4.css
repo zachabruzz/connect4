@@ -1,0 +1,66 @@
+#gameBoard {
+  border: 1px solid blue;
+  border-collapse: collapse;
+  position: absolute;
+  top: 200px;
+  left: 535px;
+  z-index: 1;
+}
+#gameBoard tr {
+  display: block;
+  float: left;
+}
+#gameBoard td {
+  border: 1px solid blue;
+  padding: 25px;
+  display: block;
+  z-index: inherit;
+  /* https://stackoverflow.com/questions/16918094/html-table-with-vertical-rows : second answer */
+}
+#errorMSG {
+  display: none;
+  font-size: 36px;
+  color: orange;
+  margin: 0 auto;
+  background-color: red;
+  text-align: center;
+}
+#redWins {
+  display: none;
+  font-size: 60px;
+  font-weight: 400;
+  margin: 0 auto;
+  color: red;
+  text-align: center;
+}
+#yellowWins {
+  display: none;
+  font-size: 60px;
+  font-weight: 400;
+  margin: 0 auto;
+  color: yellow;
+  text-align: center;
+}
+
+.redPiece {
+  padding: 25px;
+  position: absolute;
+  z-index: 0;
+  background-color: red;
+}
+
+.yellowPiece {
+  padding: 25px;
+  position: absolute;
+  z-index: 0;
+  background-color: yellow;
+}
+#title {
+  text-align: center;
+}
+#reset {
+  background-color: purple;
+  color: rgb(120, 255, 120);
+  padding: 10px 20px;
+  outline: none;
+}

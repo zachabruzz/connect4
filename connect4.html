@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="../jquery-3.4.1.js"></script>
+    <script src="connect4.js"></script>
+    <script>
+    </script>
+    <title> Connect 4! </title>
+    <link rel="stylesheet" href="connect4.css">
+  </head>
+  <body id="body">
+    <button type="button" id="reset" onclick="reset()"> Reset Game </button>
+    <h1 id="title"> Connect 4! </h1>
+    <p id="errorMSG"> Column Already Full </p>
+    <h1 class="youWin" id="redWins"> Red Wins! </h1>
+    <h1 class="youWin" id="yellowWins"> Yellow Wins! </h1>
+    <table id="gameBoard">
+      <tr>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+      </tr>
+      <tr>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+      </tr>
+      <tr>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+      </tr>
+      <tr>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+      </tr>
+      <tr>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+      </tr>
+      <tr>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+      </tr>
+      <tr>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+        <td onclick="boxClicked(this)"></td>
+      </tr>
+    </table>
+  </body>
+  <!-- sources consulted:
+        https://www.w3schools.com/howto/howto_js_animate.asp (animation using js)
+        https://stackoverflow.com/questions/16918094/html-table-with-vertical-rows (how to make <tr>'s vertical)
+        https://www.w3schools.com/css/css_positioning.asp (position:absolute, help with placing objects on top of each other)
+        https://stackoverflow.com/questions/14832603/check-if-all-values-of-array-are-equal (got me started with the identical() function)
+        https://stackoverflow.com/questions/281264/remove-empty-elements-from-an-array-in-javascript/7924304 (filtering arrays to get rid of nulls)
+        https://www.w3schools.com/jquery/ (all the jquery stuff, especially helpful the .css() property)
+      -->
+</html>
